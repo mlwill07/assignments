@@ -47,9 +47,12 @@ console.log(" ");
 function uptownReverseOther(lyrics) {
     var string = "";
     for(var i = 1; i <= lyrics.length; i += 2) {
-        if (i < lyrics.length-1) {
+        if (i < lyrics.length) {
             string += lyrics[i] + " ";
             string += lyrics[i-1] + " ";
+            if (lyrics.length % 2 === 0) {
+                continue;
+            }
         } else if (i === lyrics.length) {
             string += lyrics[i-1];
         }
@@ -64,16 +67,16 @@ console.log(" ");
 ///join and reverse method///
 
 
-function join(lyrics) {
-    console.log(lyrics.join(" "));
-}
-
-join(lyrics);
-console.log(" ");
-
-function reverseJoin(lyrics) {
-    lyrics = lyrics.reverse();
-    console.log(lyrics.join(" "));
-}
-
-reverseJoin(lyrics);
+//function join(lyrics) {
+//    console.log(lyrics.join(" "));
+//}
+//
+//join(lyrics);
+//console.log(" ");
+//
+//function reverseJoin(lyrics) {
+//    lyrics = lyrics.reverse();
+//    console.log(lyrics.join(" "));
+//}
+//
+//reverseJoin(lyrics);
