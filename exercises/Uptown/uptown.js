@@ -13,6 +13,8 @@ function uptown(lyrics) {
     for(var i = 0; i < lyrics.length; i++) {
         string += lyrics[i] + " ";
     }
+    string = string.substring(0, string.length -1);
+    string += ".";
     console.log(string);
 }
 
@@ -25,6 +27,8 @@ function uptownBack(lyrics) {
     for(var i = lyrics.length-1; i >= 0; i--) {
         string += lyrics[i] + " ";
     }
+    string = string.substring(0, string.length -1);
+    string += ".";
     console.log(string);
 }
 
@@ -37,6 +41,8 @@ function uptownOther(lyrics) {
     for(var i = 0; i < lyrics.length; i += 2) {
         string += lyrics[i] + " ";
     }
+    string = string.slice(0, -1);
+    string += ".";
     console.log(string);
 }
 
@@ -57,13 +63,27 @@ function uptownReverseOther(lyrics) {
             string += lyrics[i-1];
         }
     }
+    string = string.slice(0, 1);
+    string += ".";
     console.log(string);
 }
 
 uptownReverseOther(lyrics);
 console.log(" ");
 
-
+//function flipLyrics(lyrics) {
+//    var string = "";
+//    for (var i = 0, j = 1; j <= lyrics.length; i += 2, j += 2) {
+//        if (i <= lyrics.length) {
+//        string += lyrics[j] + " " + lyrics[i] + " ";
+//        } else if (j === lyrics.length) {
+//            string += lyrics[i];
+//        }
+//    }
+//    console.log(string);
+//}
+//
+//flipLyrics(lyrics);
 ///join and reverse method///
 
 
@@ -75,8 +95,7 @@ console.log(" ");
 //console.log(" ");
 //
 //function reverseJoin(lyrics) {
-//    lyrics = lyrics.reverse();
-//    console.log(lyrics.join(" "));
+//    console.log(lyrics.reverse().join(" "));
 //}
 //
 //reverseJoin(lyrics);
