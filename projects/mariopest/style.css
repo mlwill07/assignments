@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+/*    border: 1px dashed red;*/
+}
+
+body {
+    margin: 0;
+    background: url('images/background.gif') center center no-repeat fixed;
+    background-size: cover;
+    font-family: 'Titan One', sans-serif;
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    background-color: rgb(74, 118, 200);
+    text-shadow: 2px 2px 1px white, -1px -1px 1px white;
+    padding: .5em .5em;
+    font-weight: 500;
+}
+
+header > h1 {
+    font-size: 4em;
+    padding: 0;
+    margin-bottom: 0;
+    margin-top: .2em;
+}
+
+header > h2 {
+    font-size: 2em;
+    padding: 0;
+    margin-top:.2em;
+    margin-bottom: .2em;
+}
+
+.sectionTitle {
+    background-color: rgba(138, 174, 56, .75);
+    padding: .1em .1em;
+    text-align: center;
+    font-size: 1em;
+    margin: auto;
+    text-shadow: 1px 1px 1px white, -1px -1px 1px white;
+}
+
+section > h1 {
+    margin: 5px 0px;
+}
+
+.container {
+    width: 75%;
+    margin: auto;
+    background-color: rgba(255, 255, 255, .9) ;
+    border-bottom: 3px solid rgb(74, 118, 200);
+    padding: 0;
+}
+
+img {
+    max-width: 90%;
+    max-height: 10em;
+    margin: auto;
+}
+
+.row {
+    display: inline-block;
+    width: 32%;
+    padding: .5em;
+    margin: auto;
+}
+
+.number {
+    margin: auto;
+    text-align: center;
+    vertical-align: middle;
+    width: 39%
+}
+
+.pic {
+    margin: auto;
+    width: 20%;
+}
+
+.text {
+    text-align: center;
+    margin: auto;
+    vertical-align: middle;
+    width: 40%;
+}
+
+.text > h2 {
+    line-height: 1em;
+}
+
+h2 {
+    font-size: 1.75em;
+    margin: 0px 0px;
+}
+
+.total {
+    font-size: 3em;
+    line-height: 1.5em;
+    color: rgb(252, 138, 101);
+}
+
+
+.btn {
+    display: inline-block;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    background-color: rgb(74, 118, 200);
+    padding: .5em .5em;
+}
+
+.links, .para {
+    display: inline-block;
+    width: 40%;
+}
+
+a {
+    display: block;
+    text-align: left;
+    font-family: 'Arial', sans-serif;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: rgba(138, 174, 56, .75)
+}
+
+p {
+    text-align: right;
+}
