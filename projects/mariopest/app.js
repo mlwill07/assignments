@@ -14,14 +14,14 @@ function getTotals(num1, num2, num3) {
     var bobombSubTotal = (num2 * bobombPrice);
     var cheepSubTotal = (num3 * cheepPrice);
     
-    document.getElementById('goombaTotal').innerText = num1;
-    document.getElementById('goombaSubTotal').innerText = goombaSubTotal;
-    document.getElementById('bobombTotal').innerText = num2;
-    document.getElementById('bobombSubTotal').innerText = bobombSubTotal;
-    document.getElementById('cheepTotal').innerText = num3;
-    document.getElementById('cheepSubTotal').innerText = cheepSubTotal;
-    document.getElementById('total').innerText = total;
-    document.getElementById('captureTotal').innerText = capture;
+    document.getElementById('goombaTotal').textContent = num1;
+    document.getElementById('goombaSubTotal').textContent = goombaSubTotal;
+    document.getElementById('bobombTotal').textContent = num2;
+    document.getElementById('bobombSubTotal').textContent = bobombSubTotal;
+    document.getElementById('cheepTotal').textContent = num3;
+    document.getElementById('cheepSubTotal').textContent = cheepSubTotal;
+    document.getElementById('total').textContent = total;
+    document.getElementById('captureTotal').textContent = capture;
 }
 
 document.getElementById('goombaPlus').addEventListener('click', function () {
