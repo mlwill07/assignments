@@ -26,31 +26,53 @@ function getTotals(num1, num2, num3) {
 
 document.getElementById('goombaPlus').addEventListener('click', function () {
     goomba++;
-    getTotals(goomba, bobomb, cheep)
+    getTotals(goomba, bobomb, cheep);
 });
 
 
 document.getElementById('goombaMinus').addEventListener('click', function () {
     goomba--;
-    getTotals(goomba, bobomb, cheep)
+    getTotals(goomba, bobomb, cheep);
 });
 
 document.getElementById('bobombPlus').addEventListener('click', function () {
     bobomb++;
-    getTotals(goomba, bobomb, cheep)
+    getTotals(goomba, bobomb, cheep);
 });
 
 document.getElementById('bobombMinus').addEventListener('click', function () {
     bobomb--;
-    getTotals(goomba, bobomb, cheep)
+    getTotals(goomba, bobomb, cheep);
 });
 
 document.getElementById('cheepPlus').addEventListener('click', function () {
     cheep++;
-    getTotals(goomba, bobomb, cheep)
+    getTotals(goomba, bobomb, cheep);
 });
 
 document.getElementById('cheepMinus').addEventListener('click', function () {
     cheep--;
-    getTotals(goomba, bobomb, cheep)
+    getTotals(goomba, bobomb, cheep);
+});
+
+document.getElementById('reset').addEventListener('click', function () {
+    goomba = 0;
+    bobomb = 0;
+    cheep = 0;
+    getTotals(goomba, bobomb, cheep);
+});
+
+document.getElementById('resetGoomba').addEventListener('click', function () {
+    goomba = 0;
+    getTotals(goomba, bobomb, cheep);
+});
+
+document.getElementById('resetBobomb').addEventListener('click', function () {
+    bobomb = 0;
+    getTotals(goomba, bobomb, cheep);
+});
+
+document.getElementById('resetCheep').addEventListener('click', function () {
+    cheep = 0;
+    getTotals(goomba, bobomb, cheep);
 });
