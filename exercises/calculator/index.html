@@ -10,22 +10,34 @@
 </head>
 
 <body>
-    <div class='container'></div>
-    <div>
-        <input type="text">
-        <input type="text">
-        <button></button>
-    </div>
-    <div>
-        <input type="text">
-        <input type="text">
-        <button></button>
-    </div>
-    <div>
-        <input type="text">
-        <input type="text">
-        <button></button>
-    </div>
+    <header class='container'>
+        <h1>Calculator!</h1>
+    </header>
+    <div class='container'>
+        <div>
+            <input type="text" id='plus1'>
+            <button class='btn btn-default btn-sm' id='plusbtn'><span class='glyphicon glyphicon-plus'></span></button>
+            <input type="text" id='plus2'>
+            <h2>&nbsp = &nbsp</h2>
+            <h3 id='plus'></h3>
+        </div>
+        <div>
+            <input type="text" id='minus1'>
+             <button class='btn btn-default btn-sm' id='minusbtn'><span class='glyphicon glyphicon-minus'></span></button>
+            <input type="text" id='minus2'>
+           
+            <h2>&nbsp = &nbsp</h2>
+            <h3 id='minus'></h3>
+        </div>
+        <div>
+            <input type="text" id='mult1'>
+            <button class='btn btn-default btn-sm' id='multbtn'><span class='glyphicon glyphicon-remove'></span></button>
+            <input type="text" id='mult2'>
+            
+            <h2>&nbsp = &nbsp</h2>
+            <h3 id='mult'></h3>
+        </div>
+
     </div>
     <script src="app.js" type="text/javascript"></script>
 </body>
