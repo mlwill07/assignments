@@ -11,3 +11,4 @@ function more20(n) {
 console.log(more20(20)); // → false
 console.log(more20(21)); // → true
 console.log(more20(22)); // → true
+console.log(more20(23)); // → false

@@ -1,0 +1,52 @@
+@font-face {
+    font-family:"Super Mario 256";
+    src:url("SuperMario256.woff");
+    font-weight:normal;
+    font-style:normal;
+}
+
+div {
+    font-family: 'Super Mario 256', sans-serif;
+}
+
+.top {
+    height: 100px;
+    background-color: gold;
+    color: red;
+}
+
+.top > h1 {
+    font-size: 4em;
+}
+
+.red {
+    height: 350px;
+    background-color: red;
+    text-align: center;
+}
+
+.about {
+    height: 300px;
+    text-align: center;
+    color: red;
+}
+
+.foot {
+    height: 80px;
+    background-color: gold;
+}
+
+img {
+    margin: auto;
+}
+
+p {
+    font-family: sans-serif;
+    font-size: 1.5em;
+    margin: auto;
+}
+
+.mush {
+    max-height: 75px;
+}
+

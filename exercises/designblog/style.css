@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px 0px;
+    font-family: 'Helvetica', sans-serif;
+    background-color: lightgray;
+    color: darkslategray;
+}
+
+.header {
+    position: fixed;
+    height: 75px;
+    width: 100%;
+    background-color: darkcyan;
+    top: 0px;
+    border: 2px solid slategrey;
+}
+
+.nav {
+    text-align: right;
+    display: inline;
+    padding: 10px 10px;
+    vertical-align: middle;
+}
+
+ul {
+    vertical-align: middle;
+}
+
+nav > h1 {
+    text-align: left;
+    float: left;
+    margin-left: 20px;
+    font-size: 2em;
+    margin-top: 10px;
+}
+
+nav > h2 {
+    text-align: left;
+    float: left;
+    margin-left: 20px;
+    font-size: 1.5em;
+    margin-top: 15px;
+}
+
+ul > li {
+    list-style-type: none;
+    display: inline;
+    padding: 10px 10px;
+    vertical-align: middle;
+}
+
+a {
+    color: white;
+    text-decoration-color: white;
+}
+
+.container {
+    margin-top: 80px;
+}
+
+article {
+    width: 60%;
+    margin: auto;
+    background-color: mediumaquamarine;
+    padding: 10px 10px;
+}
+
+.blogtitle {
+    background-color: gainsboro;
+    color: darkcyan;
+}
+
+.blogtitle > h2 {
+    display: inline-block;
+    width: 49%;
+    text-align: left;
+    font-size: 2em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.blogtitle > h3 {
+    display: inline-block;
+    width: 49%;
+    text-align: right;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+img {
+    float: left;
+    max-width: 15%;
+    margin: 5px 5px;
+}
+
+article > div {
+    border-top: 1px solid mediumaquamarine;
+    border-bottom: 1px solid mediumaquamarine;
+    clear: both;
+}
+
+.para2 {
+    clear: both;
+}
