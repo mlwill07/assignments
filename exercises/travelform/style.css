@@ -1,0 +1,18 @@
+body {
+    background-image: url('mountain.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: beige;
+}
+
+.header, .footer {
+    height: 50px;
+}
+
+.form {
+    background-color: rgba(229,224,224, .8);
+    padding: 10px 10px;
+    border-radius: 5px;
+}

@@ -6,7 +6,7 @@ function Enemy(type, hitPoints, defense) {
 
 
 function pickEnemy() {
-    var enemyTypes = ['Ancient Dragon', 'Prowler', 'Mighty Grunt'];
+    var enemyTypes = ['Big Bad', 'Baby Alligator', 'slug'];
     var num = Math.floor(Math.random() * 3);
     return enemyTypes[num];
 }
@@ -18,9 +18,9 @@ function randomN(min, max) {
 function getHitPoints(type) {
     var hitPoints = 0;
 
-    if (type === 'Ancient Dragon') {
+    if (type === 'Big Bad') {
         hitPoints = randomN(80, 100);
-    } else if (type === 'Prowler') {
+    } else if (type === 'Baby Alligator') {
         hitPoints = randomN(50, 79);
     } else {
         hitPoints = randomN(20, 49);
