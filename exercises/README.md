@@ -1,5 +1,4 @@
 Exercises  
 ====================
 
-The warmups folder is a collection of the warmups we completed in class at V School. The purpose of warmups is to review and practice past material and prime us for learning new topics. Warmups are typically either quick problem-solving puzzles or small projects, and are usually completed within about 30 minutes or less.  
-Projects Folder README.md Text
+The Exercises folder contains small programs and apps that are used to demonstrate what's been learned throughout the course. Every subject we've gone over has an associated exercise to practice and showcase an understanding of that skill.      
