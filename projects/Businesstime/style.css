@@ -21,6 +21,7 @@ body {
     color: rgb(93, 53, 51);
     background-color: rgba(208,246,222, .75);
     font-family: 'Yanone Kaffeesa', sans-serif;
+    padding: 20px 20px;
 }
 
 .bottom {
