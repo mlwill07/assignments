@@ -1,14 +1,73 @@
 body {
     background-color: rgb(93, 53, 51);
-}
-.top {
-    height: 300px;
-    background-image: url(coffee2pour.jpg);
+    background-image: url(images/coffee2pour.jpg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    margin-top: 0px;
+}
+@media only screen and (min-width: 992px) {
+    .mainp {
+        display: inline-block;
+        padding: 10px;
+        text-align: justify;
+        font-size: 20px;
+    }
+    .art-title {
+        font-size: 50px
+    }
+}
+
+
+.top {
+    height: 250px;
+    background-image: url(images/coffee2pour.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-top: 50px;
     
+}
+
+.top-shop {
+    height: 200px;
+    background-image: url(images/coffee2pour.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-top: 50px;
+    
+}
+
+.navbar, .navbar-brand{
+    background-color:  rgb(170, 145, 144);
+    border-radius: 0px;
+    font-family: 'IM Fell English SC', serif;
+    border-color: rgb(119, 101, 101);
+    color: black;
+    margin-bottom: 0px;
+}
+
+.navbar-default a.navbar-brand {
+    color: black;
+    font-size: 30px;
+    line-height: 15px;
+}
+
+.navbar-default a.navbar-brand:hover {
+    color: rgb(93, 53, 51);
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: black;
+    font-size: 15px;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    color: rgb(93, 53, 51);
 }
 
 .spacer {
@@ -21,18 +80,119 @@ body {
     color: rgb(93, 53, 51);
     background-color: rgba(208,246,222, .75);
     font-family: 'Yanone Kaffeesa', sans-serif;
-    padding: 20px 20px;
 }
 
 .bottom {
-    background-color: rgb(93, 53, 51);
-    height: 350px;
+    background-color: rgba(93, 53, 51, .76);
+    padding-top: 10px;
 }
 
 .title {
     background-color: rgba(248,226,222, .9);
     text-align: left;
     font-family: 'IM Fell English SC', serif;
+    margin-top: 0px;
+    
+}
+article {
+    color: rgb(93, 53, 51);
+    background-color: rgba(170,128,127, .85);
+    font-family: 'Yanone Kaffeesa', sans-serif;
+}
+
+.art-title {
+    font-family: 'IM Fell English SC', serif;
+    text-align: center;
+}
+
+.content {
+    background-color: rgba(248,226,222, .65);
+    margin-top: 25px;
+    margin-bottom: 25px;
     
 }
 
+.about {
+    font-family: 'Yanone Kafeesa', sans-serif;
+}
+
+.aboutgreen {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-image: url(images/greenbeansmall.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.aboutroast {
+/*    height: 400px;*/
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+    background-image: url(images/coffee-roaster.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+/*    background-attachment: fixed;*/
+}
+
+
+.modal-content {
+    background-color: #776565;
+}
+.modal-header {
+    border-bottom-color: bisque;
+    color: white;
+}
+
+.modal-footer > h5 {
+    text-align: left;
+    color: whitesmoke;
+}
+
+.thumbnail {
+    background-color: #776565;
+    border-color: #776565;
+    height: 391;
+}
+.foot{
+    margin: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+footer {
+    margin: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: right;
+    background-color: #776565;
+    min-height: 50px; 
+    
+}
+
+footer >ul {
+    margin-bottom: 0px;
+}
+
+footer > ul > li {
+    list-style: none;
+    display: inline-block;
+    line-height: 50px;
+    vertical-align: middle;
+    padding-right: 25px;
+}
+
+footer >ul >li>a {
+    text-decoration: none;
+    color: inherit;
+}
+
+footer > ul > li > a:hover {
+    color: black;
+}
+footer > ul > li > a:focus {
+    color: black;
+}

@@ -1,0 +1,71 @@
+{
+    "appetizers": [
+        {
+            "name": "wings",
+            "ingredients": ["chicken", "BBQ Sauce"],
+            "descritption": "Spicy chicken wings, of deliciousness"
+        },
+        {
+            "name": "salad",
+            "ingredients": ["baby greens", "tomato", "cucumer"],
+            "descritption": "rabbit food, yo."
+        }
+        
+    ],
+    
+    "coldSandwiches": [
+        {
+            "name": "turkey",
+            "ingredients": ["turkey", "lettuce", "tomato", "mayo", "cheddar"],
+            "descritption": "boring turkey sandwich"
+        },
+        {
+            "name": "ham",
+            "ingredients": ["ham", "lettuce", "tomato", "mayo", "jack"],
+            "descritption": "boring ham sandwich"
+        }
+        
+    ],
+    
+    "hotSandwiches": [
+        {
+            "name": "patty melt",
+            "ingredients": ["ground beef", "all the cheese"],
+            "descritption": "hot and tastey old-timey"
+        },
+        {
+            "name": "veg burger",
+            "ingredients": ["lentil patty", "burger goodness"],
+            "descritption": "for the health nut"
+        }
+        
+    ],
+    
+    "desserts": [
+        {
+            "name": "ice cream sunday",
+            "ingredients": ["vanilla ice cream", "fudge sauce", "whipped cream", "nuts", "cherry"],
+            "descritption": "the usual"
+        },
+        {
+            "name": "apple pie",
+            "ingredients": ["apples", "pie"],
+            "descritption": "good old american taste"
+        }
+        
+    ],
+    
+    "drinks": [
+        {
+            "name": "hot chocolate",
+            "ingredients": ["chocolate", "milk", "whipped cream"],
+            "descritption": "warm up in cold weather"
+        },
+        {
+            "name": "chai",
+            "ingredients": ["milk", "chai tea"],
+            "descritption": "chai tea is ridiculous"
+        }
+        
+    ]
+}
