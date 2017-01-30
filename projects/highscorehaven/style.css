@@ -1,0 +1,36 @@
+body {
+    background-color: lightgray;
+/*
+    background: url(images/deer.jpg) center center no-repeat fixed;
+    background-size: cover;*/
+}
+
+.myform {
+    padding: 10px;
+    margin: 10px;
+/*
+    background-image: url(images/use_your_illusion.png);
+    background-color: white;
+    color: white;
+*/
+}
+
+table{
+    background-Color: lightgray;
+}
+
+.header {
+    background-color: dimgrey;
+    color: aqua;
+    font-family: 'Bungee Shade', cursive; 
+    text-align: center;
+}
+
+header > h1 {
+    font-size: 5em;
+}
+
+/*
+label {
+    color: aqua;
+}*/

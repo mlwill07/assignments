@@ -1,0 +1,12 @@
+.header {
+    font-family: 'Slackey', cursive;
+    text-align: center;
+    background: url('Pokemon-Characters.png') center center no-repeat fixed;
+    background-size: cover;
+    color: gold;
+    text-shadow: -2px -2px 0 blue, 2px -2px 0 blue, -2px 2px 0 blue, 2px 2px 0 blue;
+}
+
+.header h1 {
+    font-size: 4em;
+}

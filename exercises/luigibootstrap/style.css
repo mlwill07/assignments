@@ -38,7 +38,14 @@ div {
 
 img {
     margin: auto;
+/*    transition: all 1s;*/
 }
+
+/*
+img:hover {
+    box-shadow: 10px 0px 20px yellow, -10px 0px 20px yellow;
+}
+*/
 
 p {
     font-family: sans-serif;

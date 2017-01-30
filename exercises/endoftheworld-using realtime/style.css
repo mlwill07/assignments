@@ -1,0 +1,22 @@
+body {
+    background: url(earth-explosion.jpg) center center no-repeat fixed;
+    background-size: cover;
+}
+
+.ended {
+    background: url(earthexplode.gif) center center no-repeat fixed;
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    color: ghostwhite;
+    font-family: sans-serif;
+    text-shadow: 0px 0px 40px red, 0px 0px 40px orangered;
+    font-size: 4em
+}
+
+button {
+    text-align: center;
+    margin: auto;
+}

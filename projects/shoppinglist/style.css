@@ -1,0 +1,42 @@
+.page-header {
+    font-family: 'Rock Salt', cursive;
+    border-bottom-color: gray;
+    color: grey;
+}
+
+.head {
+    background-color: bisque;
+    margin-bottom: 10px;
+}
+
+body {
+    background: url(images/lined_paper.png);
+    color: grey;
+}
+
+label {
+    font-family: 'Rock Salt', cursive;
+}
+
+ol {
+    font-family: 'Loved by the King', cursive;
+    font-size: 3em;
+}
+
+
+h4 {
+    font-family: 'Loved by the King', cursive;
+    font-size: 4em;
+    border-bottom: 2px solid grey;
+    padding-bottom: 10px;
+}
+
+/*
+.pict {
+    max-height: 150px;
+    width: 100%;
+}
+img {
+    max-height: 200px;
+    float: right;
+}*/

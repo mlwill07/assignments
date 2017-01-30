@@ -3,7 +3,6 @@ var names = ["Anna", "Bill", "Charlay", "Dexter", "Emily", "Frank", "George", "H
 for(var i = 0; i < names.length; i++) {
     console.log('Attemping to call ' + names[i]);
     setTimeout(attemptCall, 1000, names[i], dontCall, call, sendText);
-    console.log('Attemping to call ' + names[i]);
 }
 
 function attemptCall (name, dontcall, call, sendtext) {
