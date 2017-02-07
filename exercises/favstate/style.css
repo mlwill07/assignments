@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background: url('components/about/montana.jpg') center center no-repeat fixed;
+    background-size: cover;
+}
+
+.mainContent {
+    margin-top: 55px;
+}
+
+
+.about, .love, .home {
+    background-color: rgba(240, 255, 255, 0.65);
+    font-size: 1.25em;
+    
+}
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+}
+
+h4 {
+    text-align: right;
+    position: relative;
+    top: -30px;
+}
+
+hr {
+    border-color: black;
+}
+
+.love {
+    text-align: center;
+}
+
+.navbar {
+    opacity: .85;
+}
+
+.images {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    margin: auto;
+}
+
+.images > img {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    border: 5px solid rgba(255, 255, 255, 0);
+}

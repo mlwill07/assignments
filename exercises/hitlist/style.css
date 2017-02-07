@@ -1,0 +1,30 @@
+body {
+    background-color: dimgrey;
+    color: aliceblue;
+    box-sizing: border-box;
+}
+
+.head {
+    background-color: firebrick;
+}
+
+.img-img {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.hitperson {
+    border: 10px solid dimgrey;
+}
+
+h4 {
+    position: relative;
+    top: -45px;
+    line-height: 2em;
+    background-color: black;
+    opacity: .8;
+    color: firebrick;
+    padding-left: 10px;
+        
+}

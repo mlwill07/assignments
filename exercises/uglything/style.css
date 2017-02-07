@@ -1,0 +1,18 @@
+.crop {
+    height: 200px;
+    /*width: 400px;*/
+    overflow: hidden;
+}
+.crop img {
+    height: auto;
+    width: 100%;
+    image-orientation: 
+}
+
+.uglyItem {
+    text-align: center;
+}
+
+.comment >p, .comment>button  {
+    display: inline;
+}

@@ -1,0 +1,36 @@
+.badge-input {
+    border: 2px solid black;
+    margin-top: 25px;
+    border-radius: 8px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.head > h3{
+    margin-top: 0px;
+    background-color: darkslateblue;
+    line-height: 2em;
+    color: lightgray;
+    padding-left: 15px;
+    
+}
+
+.forms {
+    text-align: center;
+    margin: auto;
+}
+
+.inputs {
+    margin: 10px 30px;
+    
+}
+
+.name-badge {
+    margin-left: 10px;
+    margin-right: 10px
+}
+
+.ng-invalid.ng-touched {
+    border-color: red;
+}
+

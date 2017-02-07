@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='MyApp'>
+<head>
+    <meta charset="UTF-8">
+    <title>Angular Beginning</title>
+</head>
+<body ng-controller='myController'>
+    
+    <h1>{{person.firstName}} {{person.lastName}}</h1>
+    <input type="text" placeholder='First Name' ng-model='person.firstName'>
+    <input type="text" placeholder='Last Name' ng-model='person.lastName'>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src='app.js'></script>
+</body>
+</html>

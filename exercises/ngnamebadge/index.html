@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='MyApp'>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Name Badge</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body ng-controller='mainController'>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3 badge-input">
+                <div class='head'>
+                    <h3>Badge</h3>
+                </div>
+                <form id='myForm' name='myForm' novalidate>
+                    <div class='form-group form-inline forms'>
+                       
+                        <input class='form-control inputs' name="firstName" type="text" placeholder='First Name' ng-model='newPerson.firstName' ng-minLength='3' required>
+                        
+                        <input  class='form-control inputs' name="lastName" type="text" placeholder='Last Name' ng-model='newPerson.lastName' ng-minLength='3' required>
+                        
+                    </div>
+                    
+                    <div class='form-group form-inline forms'>
+                       
+                        <input  class='form-control inputs' name="email" type="email" placeholder='Email' ng-model='newPerson.email' ng-minLength='3' required>
+                        
+                        <input  class='form-control inputs' name="placeOfBirth" type="text" placeholder='Place of Birth' ng-model='newPerson.placeOfBirth' ng-minLength='3' required>
+                        
+                    </div>
+                    
+                    <div class='form-group form-inline forms'>
+                       
+                        <input  class='form-control inputs' name="phone" type="number" placeholder='Phone' ng-model='newPerson.phone' ng-minLength='10' ng-maxlength='10' required>
+                        
+                        <input class='form-control inputs' name="food" type="text" placeholder='Favorite Food' ng-model='newPerson.food' ng-minLength='3' required>
+                        
+                    </div>
+                    
+                    <div class='form-group form-inline forms'>
+                        <textarea class="form-control inputs" name="fact" rows="5" cols='50' placeholder="Tell us something about yourself..." ng-model='newPerson.fact' ng-minLength='3' required></textarea>
+
+                    </div>
+                    
+                    <div class='form-group form-inline forms'>
+                    
+                    <button ng-click='addPerson(newPerson)' class='forms inputs btn btn-default' type='button' ng-disabled="myForm.$invalid">Submit</button>
+                    
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 name-badge badge-input" ng-repeat='person in badges'>
+               <div class='head'>
+                    <h3>Hello My Name is: </h3>
+                </div>
+                <div>
+                    <h4>{{person.firstName}} {{person.lastName}}</h4>
+                </div>
+                <div>
+                    <h4>{{person.email}} {{person.placeOfBirth}}</h4>
+                </div>
+                <div>
+                    <h4>{{person.phone}} {{person.food}}</h4>
+                </div>
+                <div>
+                    <h4>{{person.fact}}</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script
+  src="https://code.jquery.com/jquery-3.1.1.js"
+  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+  crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src='app.js'></script>
+</body>
+
+</html>

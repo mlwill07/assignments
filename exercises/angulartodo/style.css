@@ -1,0 +1,53 @@
+body {
+    background: url('backgroundcat.jpg') left bottom no-repeat fixed;
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 4em;
+    border: 1px solid slategrey;
+    background-color: slategray;
+    background-blend-mode: lighten;
+}
+
+.form {
+    padding: 25px;
+}
+
+.strike {
+    text-decoration: line-through;
+}
+
+img {
+    height: 75px;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.grey {
+    opacity: .25;
+}
+
+.visible {
+    visibility: visible
+}
+
+button {
+    margin-bottom: 10px !important;
+}
+
+table {
+    background-color: rgba(200, 200, 200, .7);
+    color: black;
+}
+
+.table-hover>tbody>tr:hover {
+    color: black;
+    background-color: rgba(245, 245, 245, .7);
+}
+
+.ng-invalid.ng-touched {
+    border-color: red;
+}

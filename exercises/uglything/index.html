@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='myApp'>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ugly Things</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body ng-controller='mainController'>
+
+    <div class='container'>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <div>
+                    <h1>Ugly Things!</h1>
+                </div>
+                <form class='form-group form-inline' >
+                    <div class='form-group'>
+                        <input class='form-control' type="text" placeholder='Title' ng-model='thing.title' required>
+                        <input class='form-control' type="text" placeholder='Image Url' ng-model='thing.imgUrl' required>
+                        <input class='form-control' type="text" placeholder='Description' ng-model='thing.description' required>
+                        <button class='btn btn-default' ng-click='addItem(thing)'>Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <div class='row'>
+                    <div class="col-md-4 uglyItem" ng-repeat='item in uglyThings track by $index' ng-init="outerIndex = $index">
+                        <h3>{{item.title}}</h3>
+                        <p>{{item.description}}</p>
+                        <button class='btn btn-xs btn-danger' ng-click='deleteItem(item, outerIndex)'><span class='glyphicon glyphicon-trash'></span></button>
+                        <div class='crop'><img ng-src='{{item.imgUrl}}'></div>
+                        <div class="input-group">
+                            <input class='form-control form-inline' type="text" placeholder="comments" ng-model='item.newComment'>
+                            <span class='input-group-btn'>
+                            <button class='btn btn-sm btn-warning' ng-click='editItem(item, outerIndex)'><span class='glyphicon glyphicon-pencil'></span></button>
+                            </span>
+                        </div>
+                        <div ng-repeat='comment in item.comments track by $index' ng-init='innerIndex = $index'>
+                            <div class='comment'>
+                                <p>{{comment}}</p>
+                                <button class='btn btn-xs btn-danger' ng-click='deleteComment(outerIndex, innerIndex)'><span class='glyphicon glyphicon-trash'></span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src='app.js'></script>
+</body>
+
+</html>
