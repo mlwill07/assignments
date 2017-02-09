@@ -1,5 +1,5 @@
 angular.module('routingApp')
 
-.controller('aboutController', ['$scope', function($scope){
-    
+.controller('aboutController', ['$scope', "NameService", function($scope, NameService){
+    $scope.username = NameService.username;
 }])

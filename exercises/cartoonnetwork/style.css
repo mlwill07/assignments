@@ -1,0 +1,36 @@
+body {
+    background: url('cn.png') bottom center no-repeat fixed;
+    background-size: contain;
+}
+.head {
+    background-color: rgba(3, 169, 244, 1);
+    text-align: center;
+    font-family: 'Bahiana', cursive;
+    
+}
+
+.header {
+    font-size: 5em;
+    font-weight: 700;
+}
+
+.cartoonitem {
+    border: 2px solid black;
+    background-color: rgba(76, 175, 80, .85);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom; 10px
+    text-align: center;
+}
+
+.cartoonitem > img {
+    margin: auto;
+}
+
+.form-group {
+    background-color: aliceblue;
+    margin: auto;
+    padding: 15px;
+    text-align: center;
+}

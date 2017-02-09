@@ -1,0 +1,49 @@
+body {
+    background-color: dimgray;
+    box-sizing: border-box;
+}
+
+.navbar {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2em;
+}
+
+.navbar-brand {
+    font-size: 1.2em;
+}
+
+.mainContent {
+    position: relative;
+    top: 55px;
+}
+
+.mainFooter {
+    max-height: 75px;
+    
+}
+
+.mainFooter > p {
+    display: inline-block;
+    width: 49%;
+    font-size: 1em;
+    line-height: 2em;
+    padding-top: 10px;
+    color: gainsboro;
+}
+
+p.left {
+    text-align: left;
+}
+
+p.left>a {
+    color: #01d277;
+}
+
+p.right {
+    text-align: right;
+}
+
+p.right > img {
+    height: 3em
+}
+

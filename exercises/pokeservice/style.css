@@ -1,0 +1,22 @@
+.head {
+    background-color: blue;
+    text-align: center;
+    color: white;
+}
+
+.form-group {
+    margin-top: 20px;
+    margin-right: 25px;
+    margin-left: auto;
+}
+
+body {
+    background-color: lightskyblue
+}
+
+p {
+    color: black;
+    text-transform: uppercase;
+    font-size: 2em;
+    text-align: center;
+}

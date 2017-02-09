@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-2">
+            <h4 ng-click="isClicked = !isClicked">{{testMovie.genres[0].name}}</h4>
+            <ul ng-show='isClicked'>
+                <li ng-click='isExpand = !isExpand' ng-repeat='item in testMovie.genres'></li>
+            
+            </ul>
+
+        </div>
+        
+    </div>
+
+
+</div>

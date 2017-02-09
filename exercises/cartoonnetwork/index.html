@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='myApp'>
+<head>
+    <meta charset="UTF-8">
+    <title>Cartoon Network</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Bahiana" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body ng-controller='cartoonController'>
+   <div class="container-fluid head">
+       <div class="row">
+           <div class="col-sm-6 col-sm-offset-3">
+               <h1 class='header'>Cartoon Network Best!</h1>
+           </div>
+       </div>
+   </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2">
+                <form class="form-group" id='cartoon'>
+                    <input type="text" placeholder='cartoon' ng-model='cartoon.title'>
+                    <input type="text" placeholder='image URL' ng-model='cartoon.imgUrl'>
+                    <input type="text" placeholder='Description' ng-model='cartoon.description'>
+                    <button class='btn btn-primary' ng-click='addCartoon(cartoon)'>Submit</button>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2">
+                <div class="cartoonitem" ng-repeat='item in cartoons track by $index'>
+                    <h2>{{item.title}}</h2>
+                    <h5>{{item.description}}</h5>
+                    <img class='img-responsive' ng-src='{{item.imgUrl}}'>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+
+    <script src='app.js'></script>
+    <script src='services.js'></script> 
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='pokeApp'>
+
+<head>
+    <meta charset="UTF-8">
+    <title>PokeService</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body ng-controller='pokeController'>
+    <div class="container-fluid head">
+        <div class="row">
+            <div class="col-sm-12">
+                <h1 class='header'>Favorite Pokemon List!</h1>
+            </div>
+        </div>
+    </div>
+    <div class='container'>
+        <div class="row">
+            <div class="col-md-3 col-md-offset-6">
+                <form class='form-group form-inline'>
+                    <input class='form-control' type='text' placeholder='enter pokemon!' ng-model='pokemon'>
+                    <button class='btn btn-primary' ng-click='addPoke(pokemon)'>Add!</button>
+                    <button class='btn btn-danger' ng-click='removePoke(pokemon)'>Remove!</button>
+
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <div>
+                    <p ng-repeat='poke in favpokemons'>{{ poke }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+
+    <script src='app.js'></script>
+    <script src='services.js'></script>
+</body>
+
+</html>
