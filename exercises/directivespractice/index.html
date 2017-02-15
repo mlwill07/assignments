@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='myApp'>
+<head>
+    <meta charset="UTF-8">
+    <title>Wish List</title>
+</head>
+<body>
+   <h1>WishList</h1>
+   <h2>This  is so  contrived.</h2>
+   <a href='#/wishone'>First Wish List</a>
+   <a href='#/wishtwo'>Second Wish List</a>
+   
+  
+   <div ng-view></div>
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.js"></script>
+    <script src="app.js"></script>
+    <script src="directives/wishone/wishList.js"></script>
+    <script src="components/wishone/wishone.js"></script>
+    <script src="components/wishtwo/wishtwo.js"></script>
+    
+</body>
+</html>

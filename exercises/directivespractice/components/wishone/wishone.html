@@ -1,0 +1,13 @@
+<div>
+    
+     <form>
+       <input type="text" placeholder='wish' ng-model='newWish.name'>
+       <input type="text" placeholder='description' ng-model='newWish.description'>
+       <input type="text" placeholder='image Url' ng-model='newWish.wishUrl'>
+       <button ng-click='getWish(newWish)'>Add Wish</button>
+   </form>
+   
+   <wish-list ng-repeat="wish in wishListOne" wish="wish"></wish-list>
+   
+  
+</div>

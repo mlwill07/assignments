@@ -1,0 +1,56 @@
+body{
+    background: url('stars.jpg') center center no-repeat fixed;
+    background-size: cover;
+    color: whitesmoke;
+}
+
+.panel {
+    margin-bottom: 5px !important;
+}
+
+.panel-heading, .panel-body {
+    background-color: #000033 !important;
+    color: white !important;
+}
+
+.panel-title {
+    font-size: 2em;
+
+}
+
+.Addnew {
+    border: 1px solid whitesmoke;
+    padding: 5px 5px;
+    background-color: #000033;
+    border-radius: 4px;
+}
+
+.Addnew:hover {
+    background-color: whitesmoke;
+    border: 1px solid black;
+    color: #000033;
+}
+
+.buttonGroup {
+    position: relative;
+    top: -45px;
+    left: 15px;
+}
+
+/*
+.panel-heading small {
+    font-size: 1.5em;
+}*/
+
+.btn {
+    margin-bottom: 20px;
+}
+
+
+.img-box {
+    max-height: 150px;
+}
+
+.img-box img {
+    max-height: 145px;
+}
