@@ -1,0 +1,81 @@
+* {
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+}
+
+.header {
+    height: 50px;
+    width: 100%;
+    background-color: teal;
+    text-align: center;
+}
+
+.head {
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+
+.btn-con {
+    text-align: center;
+}
+
+.main-btn {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+}
+
+
+.comment-group {
+    text-align: right;
+}
+
+.comment-group hr {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.comments {
+    text-align: left;
+}
+
+.issues {
+    text-align: center;
+}
+
+.description {
+    padding-top: 10px;
+}
+
+.vote-status h4, .vote-status button {
+    display: inline-block;
+    text-align: left;
+    
+}
+
+.up-vote {
+    color: green !important;
+}
+
+.down-vote {
+    color: firebrick !important;
+}
+
+.btn-delCom {
+    position: relative;
+    bottom: 5px;
+}
+
+input.ng-invalid.ng-touched {
+    border: 1px solid red;
+}
+
+.dismiss {
+    margin: 3px;
+}
+
+.dismiss:hover {
+    color: firebrick;
+}

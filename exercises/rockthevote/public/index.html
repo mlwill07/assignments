@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='myApp'>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Rock the Vote</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body ng-controller='mainController'>
+    <div class="container-fluid header">
+        <h1 class="head">Rock the Vote</h1>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 btn-con">
+
+                <button ng-hide='addIssue' class="btn btn-default btn-md main-btn" ng-click="addIssue = !addIssue" require>Add Issue</button>
+                <h1 ng-show='addIssue'>Issue to Add</h1>
+                
+                <form ng-show='addIssue' name='additem' class='form-group' novalidate>
+                   <button class="btn btn-xs btn-default glyphicon glyphicon-remove pull-right dismiss" ng-click='addIssue = !addIssue; setUntouched()'></button>
+
+                    <input class='form-control' ng-model='item.name' type="text" placeholder='Issue' required>
+                    <input class='form-control' ng-model='item.description' type="text" placeholder='Description' required>
+
+                    <button class="btn btn-default btn-md main-btn" ng-click='addItem(item); addIssue = !addIssue' ng-disabled="additem.$invalid"> Add </button>
+                    
+
+            </div>
+
+            <div class="col-md-7">
+                <h2 class='issues'>ISSUES</h2>
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <uib-accordion>
+
+                            <div uib-accordion-group ng-repeat="issue in issues | orderBy: '-vote_count'" class="panel-default" heading='{{issue.name}}'>
+                                <button class='btn btn-sm btn-default glyphicon glyphicon-pencil pull-right' ng-click='issue.editing = !issue.editing'></button>
+
+                                <button class='btn btn-default btn-sm glyphicon glyphicon-trash pull-right' ng-click='deleteIssue(issue)'></button>
+
+
+                                <div class='vote-status'>
+                                    <h4>Up-Votes:  {{issue.vote_count}} &nbsp &nbsp</h4>
+                                    <button class='up-vote btn btn-sm btn-default glyphicon glyphicon-arrow-up' ng-click="voteChange('up', issue)"></button>
+                                    <button class='down-vote btn btn-sm btn-default glyphicon glyphicon-arrow-down' ng-click="voteChange('down', issue)"></button>
+
+                                </div>
+
+                                <div class="description">
+                                    <h3>{{issue.description}}</h3>
+                                </div>
+
+                                <div ng-show='issue.editing' class='edit-form'>
+                                    <form class='form-group'>
+                                        <input class='form-control' ng-model='edited.name' type="text" placeholder='Issue'>
+                                        <input class='form-control' ng-model='edited.description' type="text" placeholder='Description'>
+
+                                        <button class="btn btn-default btn-md main-btn" ng-click='editItem(edited, issue); addIssue = !addIssue'> Edit </button>
+                                    </form>
+                                </div>
+
+
+                                <div class="comment-group">
+
+                                    <a class="text-right" ng-click="isCollapsed = !isCollapsed">Comments &nbsp<span class=badge>{{issue.comments.length}}</span></a>
+
+                                    <hr>
+
+                                    <div class='comments' uib-collapse="!isCollapsed">
+                                        <div class="well well-sm" ng-repeat='comment in issue.comments' ng-init='innerIndex = index'>{{comment}} 
+                                        <button class='btn btn-default btn-sm pull-right btn-delCom' ng-click='deleteComment(comment, issue)'><i class='glyphicon glyphicon-trash'></i></button>
+                                        </div>
+
+                                        <input class='form-control' type='text' ng-model='issue.newComment' placeholder='new comment'>
+
+                                        <button class='btn btn-default btn-sm' ng-click='addComment(issue.newComment, issue)'>Add</button>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </uib-accordion>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <!-- Scripts -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+        <script src='//ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-animate.js
+'></script>
+
+        <script src='node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js'></script>
+        <script src='app.js'></script>
+        <script src='service.js'></script>
+</body>
+
+</html>

@@ -31,6 +31,7 @@ var llamas = [
 ];
 
 app.get("/bounty", function (req, res) {
+    //query can go right here req.query => a key:value object.
     res.send(llamas);
 })
 
