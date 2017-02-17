@@ -2,7 +2,7 @@ angular.module('routingApp')
 
 .controller('homeController', ['$scope', 'httpService', function ($scope, httpService) {
     
-    $scope.smImg = "https://image.tmdb.org/t/p/w45"
+    $scope.smImg = "https://image.tmdb.org/t/p/w92"
 
     $scope.testMovie = httpService.getMovie()
         .then(function (response) {
