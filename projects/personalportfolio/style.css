@@ -28,6 +28,29 @@ a.navbar-brand {
     width: 100%;
 }
 
+.big-about {
+    position: relative;
+    top: -20px;
+    background: url('images/buildingstruts.jpg') center center no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 265px;
+    width: 100%;
+}
+
+.big-about-name {
+    position: relative;
+    top: 70px;
+    z-index: 100;
+    margin: auto;
+    text-align: left;
+    font-family: 'Raleway', sans-serif;
+    color: #95AB63;
+    padding: 20px 20px;
+    background-color: rgba(0, 0, 0, .5);
+    line-height: .6em;
+}
+
 
 .big-two {
     background-image: url("images/forest.jpg") !important;
@@ -60,6 +83,11 @@ h3.big-name {
 
 .social a:hover {
     color: #BDD684;
+}
+
+.about-content {
+    position: relative;
+    top: 80px;
 }
 
 .lang {
