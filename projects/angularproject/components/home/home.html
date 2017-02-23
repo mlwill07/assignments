@@ -52,7 +52,7 @@
             <h1 class='homeTile'>Popular People</h1>
             <div class="row">
                 <div class="person" ng-repeat='person in people.results'>
-                    <div class="col-md-3 panel panel-default" >
+                    <div class="col-sm-2 col-md-3 panel panel-default" >
                         <a  href=#/people/{{person.id}}><div class='panel panel-default personDiv' style="background-image: url('{{smImg}}{{person.profile_path}}')"> </div></a>       
                         <a class='popPeop' href=#/people/{{person.id}}>{{person.name}}</a>
                         

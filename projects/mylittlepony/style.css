@@ -1,0 +1,115 @@
+
+.navbar, .navbar-nav, .navbar-header  {
+    background-color: #453C9D;
+   
+}
+
+.navbar-brand {
+    color: white;
+    font-size: 1.5em;
+}
+
+.navbar-brand:hover, .navbar-brand:focus {
+    color: lavender;
+}
+
+ .navbar-nav > li > a {
+    color: white;
+     font-size: 1.5em;
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+    background-color: #3C51B4;
+}
+
+.viewContainer {
+    margin-top: 50px;
+    
+}
+
+.dash {
+    margin-top: 50px;
+    min-height: 100vh;
+    background: #683CB4 center center no-repeat fixed;
+    background-size: cover;
+}
+
+.formbox {
+    color: ghostwhite;
+    text-align: center;
+    margin-top: 50px;
+    border: 1px solid grey;
+    border-radius: 4px;
+    background-color: rgba(69, 60, 157, .6)
+}
+
+.ponyForm {
+    margin: 50px;
+    text-align: center;
+}
+
+.ponyForm>input, .ponyEdit>input {
+    margin-bottom: 10px;
+}
+
+.ponyEdit {
+    margin-top: 20px;
+}
+
+.ponyForm>button {
+    margin-left: auto;
+    margin-right: auto;
+    color: #386AAA;
+}
+
+.button-group {
+    margin-bottom: 20px;
+}
+
+.ponyItem {
+    background-color: #386AAA;
+    text-align: center;
+    border: 10px solid white;
+}
+
+.ponyItem>img {
+    max-height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.scroll {
+    width: 100%;
+    height: 200px;
+    margin: 25px auto;
+    background: white;
+    border: 1px solid #000;
+    overflow: auto;
+}
+
+.scroll ul {
+    float: left;
+    margin-right: -999em;
+    white-space: nowrap;
+    list-style: none;
+}
+
+.scroll li {
+    margin: 15px;
+    text-align: center;
+    float: left;
+    display: inline;
+}
+
+.scroll span {
+    padding: 5px 0 0;
+    display: block;
+    font-size: 1.2em
+}
+
+.scroll img {
+    max-height: 150px;
+    display: block;
+}
+

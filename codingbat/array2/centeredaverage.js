@@ -22,6 +22,6 @@ function centeredAverage(arr) {
     return sum/(arr.length-2);
 }
 
-console.log(centeredAverage([1, 2, 3, 4, 100])) // → 3
-console.log(centeredAverage([1, 1, 5, 5, 10, 8, 7])) // → 5
-console.log(centeredAverage([-10, -4, -2, -4, -2, 0])) // → -3
+console.log(centeredAverage([1, 2, 3, 4, 100])); // → 3
+console.log(centeredAverage([1, 1, 5, 5, 10, 8, 7])); // → 5
+console.log(centeredAverage([-10, -4, -2, -4, -2, 0])); // → -3

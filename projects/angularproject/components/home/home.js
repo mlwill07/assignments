@@ -28,13 +28,14 @@ angular.module('routingApp')
 
 
 
-    $scope.keywordSearch = function (keyword) {
-        httpService.keywordSearch(keyword)
-            .then(function (response) {
-                $scope.keywordreturn = response;
-            console.log($scope.keywordreturn)
-            })
-    }
+//    $scope.keywordSearch = function (keyword) {
+//        httpService.keywordSearch(keyword)
+//            .then(function (response) {
+//                $scope.keywordreturn = response;
+//            console.log($scope.keywordreturn)
+//            });
+//        delete $scope.search;
+//    }
 
     $scope.getPopPeople = function () {
         httpService.getPopPeople()
@@ -53,16 +54,8 @@ angular.module('routingApp')
         if ((input === 'browse') && ($scope.genreClick === true)) {
             $scope.genreClick = false;
             $scope.getMore = false;
-        } else if ((input === 'search') && ($scope.isSearch === true)) {
-            $scope.isSearch = false;
         } else if (input === 'browse') {
-            $scope.genreClick = true;
-            $scope.isSearch = false;
-            
-        } else if (input === 'search') {
-            $scope.genreClick = false;
-            $scope.isSearch = true;
-            $scope.getMore = false;
+            $scope.genreClick = true;            
 
         }
 

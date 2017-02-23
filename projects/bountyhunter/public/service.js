@@ -11,11 +11,11 @@ angular.module('myApp')
     }
     
     this.deleteBounty = function(person) {
-        return $http.delete('http://localhost:8000/bounty/' + person.id)
+        return $http.delete('http://localhost:8000/bounty/' + person._id)
     }
     
     this.editPerson = function(item){
-        return $http.put('http://localhost:8000/bounty/' + item.id, item)
+        return $http.put('http://localhost:8000/bounty/' + item._id, item)
         .then(function(response){
               response = response.data;
               return response

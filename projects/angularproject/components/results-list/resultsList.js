@@ -12,6 +12,7 @@ angular.module('routingApp')
             .then(function (response) {
                 $scope.keyword = response;
             })
+        delete $scope.search;
     }
     
 

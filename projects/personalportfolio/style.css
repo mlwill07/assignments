@@ -1,5 +1,7 @@
 * {
     font-family: 'Raleway', sans-serif;
+/*    border: 1px dashed red;*/
+/*    background-color: #333;*/
 }
 
 .navbar {
@@ -9,69 +11,27 @@
 .navbar-inverse .navbar-nav>li>a {
     color: #E2F0D6;
     font-family: 'Raleway', sans-serif;
-
 }
 
 a.navbar-brand {
     color: #E2F0D6 !important;
 }
 
-.titletest {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    color: yellow;
-}
-
-.parallax {
-    perspective: 1px;
-    height: 100vh;
-    overflow-x: hidden;
-    overflow-y: auto;
-}
-
-.parallax_layer {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    padding: 100vh 0;
-}
-
-.parallax_layer--base {
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    
-}
-
-.parallax_layer--back {
-    -webkit-transform: translateZ(-1px);
-    transform: translateZ(-1px);
-    width: 100%;
-    height: 100vh;
-    background:  url('images/buildingstruts.jpg') center center no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-}
 
 .big {
     position: relative;
     top: -20px;
-    background:  url('images/buildingstruts.jpg') center center no-repeat;
+    background: url('images/buildingstruts.jpg') center center no-repeat;
     background-attachment: fixed;
     background-size: cover;
     height: 550px;
     width: 100%;
 }
 
-/*
+
 .big-two {
     background-image: url("images/forest.jpg") !important;
 }
-*/
 
 .big-name {
     position: relative;
@@ -82,12 +42,11 @@ a.navbar-brand {
     font-family: 'Raleway', sans-serif;
     color: #95AB63;
     padding: 20px 20px;
-    background-color: rgba(0,0,0,.5)
+    background-color: rgba(0, 0, 0, .5)
 }
 
 h1.big-name {
     font-size: 4em;
-
 }
 
 h3.big-name {
@@ -112,43 +71,43 @@ h3.big-name {
     width: 100%;
     height: 125px;
     margin: 20px 10px;
-   
 }
 
 .html {
     background: url('images/logos/HTML5_Logo_512.png') center center no-repeat;
-     background-size: contain;
+    background-size: contain;
 }
 
 .css {
     background: url('images/logos/css3-logo.png') center center no-repeat;
-     background-size: contain;
+    background-size: contain;
 }
 
 .js {
     background: url('images/logos/Javascript-shield.png') center center no-repeat;
-     background-size: contain;
+    background-size: contain;
 }
 
 .boot {
     background: url('images/logos/Bootstrap.png') center center no-repeat;
-     background-size: contain;
+    background-size: contain;
 }
 
 .jquery {
     background: url('images/logos/jQurery.gif') center center no-repeat;
-     background-size: contain;
+    background-size: contain;
 }
 
 .angu {
     background: url('images/logos/angularjs-logo.png') center center no-repeat;
-     background-size: contain;
+    background-size: contain;
 }
 
 .node {
     background: url('images/logos/nodejs-icon.svg') center center no-repeat;
-     background-size: contain;
+    background-size: contain;
 }
+
 
 /*
 font-family: 'Raleway', sans-serif;
@@ -162,4 +121,3 @@ palegreen:  #E2F0D6
 palergreen: #F6FFE0
 
 */
-

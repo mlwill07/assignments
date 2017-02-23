@@ -1,0 +1,27 @@
+<div class='dash' style='background-image: url("components/add/dashsilhouette.png")'>
+   
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3 formbox">
+               <h1>Add a favorite Pony</h1>
+                <form class='form-group ponyForm' name='addPonyForm' novalidate>
+                    <input class="form-control" type="text" placeholder="Name" ng-model="pony.name" required>
+                    <input class="form-control" type="text" placeholder="Image URL" ng-model="pony.imgUrl" required>
+                    <input class="form-control" type="text" placeholder="Username" ng-model="pony.username" required>
+                    <button class='btn btn-lg btn-default glyphicon glyphicon-plus' ng-click='addPony(pony)' ng-disabled="addPonyForm.$invalid"></button>
+                    
+                </form>
+
+            </div>
+            <div class="row">
+                <div ng-if="pony.name" class="col-md-6 col-md-offset-3 formbox">
+                   <h2>Preview</h2>
+                    <h1>{{pony.name}}</h1>
+                    <img class='img-responsive' ng-src="{{pony.imgUrl}}" alt="">
+                    <h4>Added By: {{pony.username}}</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
