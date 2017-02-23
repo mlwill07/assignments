@@ -25,4 +25,12 @@ angular.module('myApp')
         return $http.put('http://api.vschool.io/miriamwilliams/pony/' + ponyId, pony)
     }
     
+    
+    this.getYouTube = function(pony) {
+        var friend = "my+little+pony+friendship+is+magic+" + pony;
+        return $http.get("https://www.googleapis.com/youtube/v3/search?part=snippet&q=" + friend + "&type=video&videoDefinition=high&key=AIzaSyAJwYZSbsQSlVHT_6rxE3-weiY6nyCG7tA")
+            .then(function(response){
+            return response.data.items[0];
+        })
+    }
 }])

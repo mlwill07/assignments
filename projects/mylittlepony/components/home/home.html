@@ -1,36 +1,39 @@
 <div class='container'>
 
+
+    
+<div  class="modal-demo">
+    <script type="text/ng-template" id="myModalContent.html">
+      
+
+    
+        <div class="modal-body" id="modal-body">
+             <h3 class='modal-title'>{{modalPony.name}}</h3>
+
+            <iframe width="640" height="390" ng-src="{{trustedUrl}}" frameborder="0" ></iframe>
+            
+        </div>
+        
+        
+    </script>
+    
     <div class="scroll">
         <ul>
             <li ng-repeat='pony in ponies'>
-                <a ng-click='$ctrl.open()'>
-                    <img ng-src="{{pony.imgUrl}}" alt="">
+                <a ng-click="openModal(pony)">
+                    <img  ng-src="{{pony.imgUrl}}" alt="">
                     <span>{{pony.name}}</span>
                 </a>
             </li>
         </ul>
-    </div>
-    
-    <script type="text/ng-template" id="myModalContent.html">
-        <div class="modal-header">
-            <h3 class="modal-title" id="modal-title">I'm a modal!</h3>
-        </div>
-        <div class="modal-body" id="modal-body">
-            <ul>
-                <li ng-repeat="item in $ctrl.items">
-                    <a href="#" ng-click="$event.preventDefault(); $ctrl.selected.item = item">{{ item }}</a>
-                </li>
-            </ul>
-            Selected: <b>{{ $ctrl.selected.item }}</b>
-        </div>
-        <div class="modal-footer">
-            <button class="btn btn-primary" type="button" ng-click="$ctrl.ok()">OK</button>
-            <button class="btn btn-warning" type="button" ng-click="$ctrl.cancel()">Cancel</button>
-        </div>
-    </script>
+</div>
+
+</div>
+
 
     <div class="row">
-       <h1>Fan-Favorite Ponies</h1>
+       <h1 class='fan-fav'>Fan-Favorite Ponies</h1>
+       <hr>
         <div class="col-md-3 ponyItem" ng-repeat='pony in ponies track by $index'>
             <h3>{{pony.name}}</h3>
             <img class='img-responsive' ng-src='{{pony.imgUrl}}'>

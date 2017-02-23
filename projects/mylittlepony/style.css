@@ -73,7 +73,7 @@
     border: 10px solid white;
 }
 
-.ponyItem>img {
+.ponyItem>img, .formbox>img {
     max-height: 150px;
     margin-left: auto;
     margin-right: auto;
@@ -113,3 +113,19 @@
     display: block;
 }
 
+.fan-fav {
+    text-align: center;
+    color: #453C9D;
+}
+
+.modal-body {
+    background-color: lightgray;
+    border-radius: 4px;
+    text-align: center;
+    color: #8138AA;
+    width: 680px;
+}
+
+.modal-body {
+    margin-top: 0px
+}
