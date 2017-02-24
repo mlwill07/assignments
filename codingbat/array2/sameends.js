@@ -2,15 +2,14 @@
 
 function sameEnds(arr, num) {
     var count = 0;
-    for (var i = 0; i < num; i++){
-         console.log(arr[i]);
-            console.log(arr[((arr.length - 1) - i)]);
-        if(arr[i] === arr[((arr.length - 1) - i)]){
-           
+    var begin = arr.splice(0, num);
+    var end = arr.splice(arr.length-num)
+    for (var i = 0; i < begin.length; i++){
+        if(begin[i] === end[i]){
             count++
         }
     }
-    if (count === num){
+    if(count === begin.length){
         return true;
     } else {
         return false;
@@ -20,3 +19,4 @@ function sameEnds(arr, num) {
 console.log(sameEnds([5, 6, 45, 99, 13, 5, 6], 1)); // → false
 console.log(sameEnds([5, 6, 45, 99, 13, 5, 6], 2)); // → true
 console.log(sameEnds([5, 6, 45, 99, 13, 5, 6], 3)); // → false
+console.log(sameEnds([5, 6, 45, 99, 13, 5, 6, 45], 3)); // → true
