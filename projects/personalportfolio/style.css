@@ -1,7 +1,7 @@
 * {
     font-family: 'Raleway', sans-serif;
-/*    border: 1px dashed red;*/
-/*    background-color: #333;*/
+    /*    border: 1px dashed red;*/
+    /*    background-color: #333;*/
 }
 
 .navbar {
@@ -17,43 +17,82 @@ a.navbar-brand {
     color: #E2F0D6 !important;
 }
 
+.nav-tabs>li.active>a,
+.nav-tabs>li.active>a:focus,
+.nav-tabs>li.active>a:hover {
+    background-color: #101010;
+    color: #BDD684;
+    border: 0px;
+}
+
+.nav-tabs>li>a:focus,
+.nav-tabs>li>a:hover {
+    border-radius: 0px;
+}
+
+.iconLinks {
+    padding-bottom: 5px !important;
+    padding-top: 10px !important;
+}
+
+.nav-tabs {
+    border-bottom: 0px !important;
+}
+
+.mainContent {
+    position: relative;
+    top: 70px;
+}
+
+#skills,
+#about,
+#portfolio,
+#home,
+#contact {
+    padding-top: 60px;
+    margin-top: -60px;
+}
+
+@media only screen and (max-width: 992px) {
+    .big-main {
+        height: 400px !important;
+    }
+    .big-name {
+        top: 175px !important;
+    }
+    h1.big-name {
+        font-size: 3em !important;
+    }
+    h3.big-name {
+        font-size: 1.5em !important;
+    }
+}
 
 .big {
     position: relative;
     top: -20px;
-    background: url('images/buildingstruts.jpg') center center no-repeat;
-    background-attachment: fixed;
+    background: url('images/computer-coffee.jpg') center center no-repeat;
+    /*    background-attachment: fixed;*/
     background-size: cover;
-    height: 550px;
+    height: 600px;
     width: 100%;
 }
-
-.big-about {
-    position: relative;
-    top: -20px;
-    background: url('images/buildingstruts.jpg') center center no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    height: 265px;
-    width: 100%;
-}
-
-.big-about-name {
-    position: relative;
-    top: 70px;
-    z-index: 100;
-    margin: auto;
-    text-align: left;
-    font-family: 'Raleway', sans-serif;
-    color: #95AB63;
-    padding: 20px 20px;
-    background-color: rgba(0, 0, 0, .5);
-    line-height: .6em;
-}
-
 
 .big-two {
-    background-image: url("images/forest.jpg") !important;
+    background-image: url("images/maps.jpg") !important;
+    height: 200px;
+}
+
+.big-three {
+    background-image: url("images/folders-coffee.jpg") !important;
+    background-position: 0% 50%;
+    height: 200px;
+}
+
+.big-four {
+    background-image: url("images/coffee-card.jpg") !important;
+    background-position: 0% 80%;
+    height: 200px;
 }
 
 .big-name {
@@ -79,19 +118,48 @@ h3.big-name {
 
 .social a {
     color: #F6FFE0;
+    padding: 10px 5px;
 }
 
 .social a:hover {
     color: #BDD684;
 }
 
-.about-content {
-    position: relative;
-    top: 80px;
+.skillsContainer {
+    border: 25px solid white;
+}
+
+.port {
+    padding-bottom: 25px;
 }
 
 .lang {
+    margin-top: 5px;
+    margin-bottom: 5px;
     text-align: center;
+    font-size: 3.5em;
+}
+
+.subhr {
+    width: 50%;
+    border: 1px solid rgba(149, 171, 99, .6);
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+@media (min-width: 1100px) {
+    .modal-lg {
+        width: 1000px;
+    }
+}
+
+.port-title {
+    margin-top: 10px;
+}
+
+.port ul {
+    list-style: none;
+    padding-left: 0;
 }
 
 .icon {
@@ -99,6 +167,48 @@ h3.big-name {
     width: 100%;
     height: 125px;
     margin: 20px 10px;
+}
+
+.panel {
+    border: 0px solid transparent;
+}
+
+.panel-heading {
+    padding: 10px 15px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.aboutParas {
+    padding-top: 20px;
+    font-size: 1.15em;
+    
+}
+
+.aboutParas p {
+    line-height: 1.4em;
+    text-align: justify;
+}
+
+.panel-group .panel {
+    border-radius: 0px;
+    margin-top: 5px;
+}
+
+.panel-default>.panel {
+    border-radius: 0px;
+}
+
+.panel-default>.panel-heading {
+    background-color: #E2F0D6;
+}
+
+.panel-body {
+    margin-top: -5px;
+    border-right: 1px solid lightgray;
+    border-left: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
 }
 
 .html {
@@ -133,6 +243,15 @@ h3.big-name {
 
 .node {
     background: url('images/logos/nodejs-icon.svg') center center no-repeat;
+    background-size: contain;
+}
+
+.mongo {
+    background: url('images/logos/mongodbicon.png') center center no-repeat;
+    background-size: contain;
+}
+.express {
+    background: url('images/logos/expressIcon.png') center center no-repeat;
     background-size: contain;
 }
 

@@ -146,6 +146,8 @@ small {
     text-align: justify;
     max-height: 238px;
     overflow: scroll;
+    text-overflow: ellipsis;
+    
 }
 
 

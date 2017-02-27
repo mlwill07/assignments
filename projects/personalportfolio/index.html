@@ -9,7 +9,7 @@
     <link href='style.css' rel='stylesheet'>
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#navbarToggle">
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -22,68 +22,409 @@
                 </button>
             </div>
 
-            <div class="collapse navbar-collapse navbar-right" id="navbarToggle">
-                <ul class="nav navbar-nav">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
+            <div class="collapse navbar-collapse" id="navbarToggle">
+                <ul class="nav navbar-nav nav-tabs" role="tablist">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li> <a class="iconLinks" href='#'><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
+                    <li> <a class="iconLinks" href='#'><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    
+
     <!-- end of NAV -->
-
-    <div class="big">
-        <h1 class='big-name'>Miriam Williams</h1>
-        <h3 class='big-name'>Something about what I do...</h3>
-        <div class='big-name social'>
-            <a href='#'><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
-            <a href='#'><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
-        </div>
-
-    </div>
-
-    <div class="container-fluid">
+    <div class="containter-fluid mainContent" id="home">
         <div class="row">
             <div class="col-sm-12">
-                <h2 class="lang">Languages</h2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-6 col-md-4">
-                <div class='icon html'></div>
-            </div>
-            <div class="col-sm-6 col-md-4">
-                <div class='icon css'></div>
-            </div>
-            <div class="col-sm-6 col-md-4">
-                <div class='icon js'></div>
-            </div>
+                <div class="big big-main">
+                    <h1 class='big-name'>Miriam Williams</h1>
+                    <h3 class='big-name'>Fullstack web development</h3>
+                    <div class='big-name social'>
+                        <a href='#'><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+                        <a href='#'><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+                    </div>
 
-            <div class="col-sm-6 col-md-4">
-                <div class='icon boot'></div>
-            </div>
-            <div class="col-sm-6 col-md-4">
-                <div class='icon jquery'></div>
-            </div>
-            <div class="col-sm-6 col-md-4">
-                <div class='icon angu'></div>
-            </div>
-            <div class="col-sm-6 col-md-4">
-                <div class='icon node'></div>
+                </div>
             </div>
         </div>
 
-    </div>
-    <div class="row"></div>
-    <div class="big big-two">
+
+        <div class="container-fluid" id='skills'>
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2 class="lang">Skills</h2>
+                    <hr class='subhr'>
+                </div>
+            </div>
+            <div class="row skillsContainer">
+                <div class="col-xs-6 col-sm-4 col-md-4">
+                    <div class='icon html'></div>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-4">
+                    <div class='icon css'></div>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-4">
+                    <div class='icon js'></div>
+                </div>
+
+                <div class="col-xs-6 col-sm-4 col-md-4">
+                    <div class='icon boot'></div>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-4">
+                    <div class='icon jquery'></div>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-4">
+                    <div class='icon angu'></div>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-4">
+                    <div class='icon node'></div>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-4">
+                    <div class='icon express'></div>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-4">
+                    <div class='icon mongo'></div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row" id='portfolio'></div>
+
+        <div class="big big-three">
+        </div>
+
+        <div class="container port">
+            <div class="row">
+                <div class="col-sm-12 ">
+                    <h2 class="lang">Portfolio</h2>
+                    <hr class='subhr'>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2 class="port-title">MediaShack</h2>
+                    <hr>
+                    <ul>
+                        <li>Built on Angular and linked to The Movie Database API</li>
+                        <li>Allows for keyword searches and browsing by genre.</li>
+                        <li>Each page is generated using content delivered by the API specific to the Movie/person/TV show selected</li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6  col-md-4">
+                    <a data-toggle="modal" data-target=".mediashack-modal-lg" class="thumbnail">
+                        <img src="images/screenshots/mediashackhome.jpg" alt="">
+                    </a>
+                </div>
+
+                <div class="col-xs-12 col-sm-6  col-md-4">
+                    <a data-toggle="modal" data-target=".mediashack-movie-modal-lg" class="thumbnail">
+                        <img src="images/screenshots/mediashack_moviedetail.jpg" alt="movie detail">
+                    </a>
+                </div>
+
+                <div class="col-xs-12  col-sm-6 col-md-4">
+                    <a data-toggle="modal" data-target=".mediashack-person-modal-lg" class="thumbnail">
+                        <img src="images/screenshots/mediashack_persondetail.jpg" alt="movie detail">
+                    </a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2 class="port-title">Rock the Vote</h2>
+                    <hr>
+
+                    <ul>
+                        <li>A full MEAN stack application</li>
+                        <li>Allows for new issues to be added, commented on, and up or down voted.</li>
+                        <li>Each issue is ordered by upvote score.</li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <a data-toggle="modal" data-target=".rockthevote-modal-lg" class="thumbnail">
+                        <img src="images/screenshots/rockthevote.jpg" alt="">
+                    </a>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <a data-toggle="modal" data-target=".rockthevote-expand-modal-lg" class="thumbnail">
+                        <img src="images/screenshots/rockthevote-expanded.jpg" alt="movie detail">
+                    </a>
+                </div>
+            </div>
+
+            <div class="modal fade mediashack-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <img class="img-responsive" src="images/screenshots/mediashackhome.jpg" alt="home">
+                    </div>
+                </div>
+            </div>
 
 
+            <div class="modal fade mediashack-movie-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <img class="img-responsive" src="images/screenshots/mediashack_moviedetail.jpg" alt="movie detail">
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade mediashack-person-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <img class="img-responsive" src="images/screenshots/mediashack_persondetail.jpg" alt="movie detail">
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade rockthevote-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <img class="img-responsive" src="images/screenshots/rockthevote.jpg" alt="home">
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade rockthevote-expand-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <img class="img-responsive" src="images/screenshots/rockthevote-expanded.jpg" alt="home">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="row" id='about'></div>
+        <div class="big big-two">
+        </div>
+
+        <div class="container port">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2 class="lang">About</h2>
+                    <hr class='subhr'>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 aboutParas">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p>Miriam Williams is a web development professional with experience in both front-end development and back-end development, with training in the full MEAN stack. She transitioned to web development from a career in non-profit work. Where she has experience in program evaluation and coordination, as well as social innovation practices.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p>She has also worked extensively abroad first as a Peace Corps volunteer in Benin, a French-speaking nation in West Africa, where she taught English to middle-school students and worked in girl's development and empowerment. Additionally, she spent two and half years in Haifa, Israel, working in Communications.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <h3>Work Experience</h3>
+                </div>
+            </div>
+            <hr>
+
+            <!-- Accordian Collapse -->
+
+
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingOne">
+
+                        <h4 class="panel-title">
+                           <div class="row">
+                           
+                               <span role="button" data-toggle="collapse" data-parent="#accordion" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                               <div class="col-xs-4">
+                              Accenture Federal Services
+                            
+                           </div>
+                           <div class="col-xs-4 text-center">
+                               <small>
+                                Human Performance Specialist
+                            </small>
+                           </div>
+                       <div class="col-xs-4 text-right">
+                               <small >
+                                Dec 2015 - Dec 2016
+                            </small>
+                           
+                               </div>
+                               </span>
+                           </div>
+                           </h4>
+                    </div>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <p>Washington, D.C.</p>
+                                <ul>
+                                    <li></li>
+                                </ul>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingTwo">
+                        <h4 class="panel-title">
+                           <div class="row">
+                            <span role="button" data-toggle="collapse" data-parent="#accordion" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" >
+                             <div class="col-xs-4">
+                                 Baha'i World Centre
+                             </div>
+                              <div class="col-xs-4 text-center">
+                              <small>Communication Associate</small>
+                              </div>
+                              <div class="col-xs-4 text-right">
+                              <small>Mar 2013 - Sept 2015</small>
+                              </div>
+                            </span>
+                          </h4>
+                    </div>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <h4>Baha'i World Centre</h4>
+                                <p>March 2013 - Sep 2015</p>
+                                <p>Haifa, Israel</p>
+                            </div>
+                            <div class="col-md-9">
+                                <h4>Communications Associate</h4>
+                                <ul>
+                                    <li>Stuff that I did there that is awesome!</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingThree">
+                        <h4 class="panel-title">
+                           <div class="row">
+                            <span role="button" data-toggle="collapse" data-parent="#accordion" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                             <div class="col-xs-4">
+                                 Centre for Social Innovation
+                             </div>
+                              <div class="col-xs-4 text-center">
+                              <small>LAB Project Coordinator</small>
+                              </div>
+                              <div class="col-xs-4 text-right">
+                              <small>Sept 2010 - Dec 2011</small>
+                              </div>
+                            </span>
+                          </h4>
+                    </div>
+                </div>
+                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <h4>Social Innovation</h4>
+                                <p></p>
+                                <p>Boston, MA</p>
+                            </div>
+                            <div class="col-md-9">
+                                <h4>Project Coordinator</h4>
+                                <ul>
+                                    <li>Stuff that I did there that is awesome!</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingFour">
+                        <h4 class="panel-title">
+                           <div class="row">
+                            <span role="button" data-toggle="collapse" data-parent="#accordion" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                             <div class="col-xs-4">
+                                 Peace Corps
+                             </div>
+                              <div class="col-xs-4 text-center">
+                              <small>Peace Corps Volunteer</small>
+                              </div>
+                              <div class="col-xs-4 text-right">
+                              <small>July 2007 - July 2009</small>
+                              </div>
+                            </span>
+                          </h4>
+                    </div>
+                </div>
+                <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <h4>Peace Corps Benin</h4>
+                                <p></p>
+                                <p>Benin</p>
+                            </div>
+                            <div class="col-md-9">
+                                <h4>English Teacher</h4>
+                                <ul>
+                                    <li>Stuff that I did there that is awesome!</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="row" id='contact'></div>
+
+        <div class="big big-four">
+        </div>
+
+        <div class="container port">
+            <div class="row">
+                <div class="col-sm-12 ">
+                    <h2 class="lang">Contact</h2>
+                    <hr class='subhr'>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+
+                </div>
+            </div>
+        </div>
     </div>
-    </div>
-    
-<!-- SCRIPTS -->
+
+    <!-- SCRIPTS -->
 
     <script src="https://use.fontawesome.com/0ea91bf605.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
