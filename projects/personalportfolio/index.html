@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Miriam Williams</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Raleway" rel="stylesheet">
@@ -28,13 +29,13 @@
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
+<!--                    <li><a href="#contact">Contact</a></li>-->
                 </ul>
 
 
                 <ul class="nav navbar-nav navbar-right">
-                    <li> <a class="iconLinks" href='#'><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
-                    <li> <a class="iconLinks" href='#'><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a></li>
+                    <li> <a target="_blank" class="iconLinks" href='https://github.com/mlwill07'><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
+                    <li> <a target="_blank" class="iconLinks" href='https://www.linkedin.com/in/miriamleawilliams/'><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -42,9 +43,10 @@
 
     <!-- end of NAV -->
     <div class="containter-fluid mainContent" id="home">
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="big big-main">
+        
+           
+            
+                <div class="big big-main edge2">
                     <h1 class='big-name'>Miriam Williams</h1>
                     <h3 class='big-name'>Fullstack web development</h3>
                     <div class='big-name social'>
@@ -53,8 +55,7 @@
                     </div>
 
                 </div>
-            </div>
-        </div>
+           
 
 
         <div class="container-fluid" id='skills'>
@@ -97,7 +98,7 @@
 
         </div>
 
-        <div class="row" id='portfolio'></div>
+        <div id='portfolio'></div>
 
         <div class="big big-three">
         </div>
@@ -115,7 +116,7 @@
                     <h2 class="port-title">MediaShack</h2>
                     <hr>
                     <ul>
-                        <li>Built on Angular and linked to The Movie Database API</li>
+                        <li>A CRUD single-page application built with Angular and Bootstrap</li>
                         <li>Allows for keyword searches and browsing by genre.</li>
                         <li>Each page is generated using content delivered by the API specific to the Movie/person/TV show selected</li>
                     </ul>
@@ -144,11 +145,61 @@
 
             <div class="row">
                 <div class="col-sm-12">
+                    <h2 class="port-title">BookList</h2>
+                    <hr>
+
+                    <ul>
+                        <li>A CRUD single-page application built with Angular and Materialize</li>
+                        <li>Gets a list of books, by subject or search</li>
+                        <li>Each book can be added to the current, future or past reading list with comments added.</li>
+                        <li>Books are saved to a locally hosted mongoDB database.</li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <a data-toggle="modal" data-target=".bookList-modal-lg" class="thumbnail">
+                        <img src="images/screenshots/bookList.jpg" alt="">
+                    </a>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <a data-toggle="modal" data-target=".bookList-search-modal-lg" class="thumbnail">
+                        <img src="images/screenshots/bookList_search.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <a data-toggle="modal" data-target=".bookList-detail-modal-lg" class="thumbnail">
+                        <img src="images/screenshots/bookList_bookdetail.jpg" alt="">
+                    </a>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <a data-toggle="modal" data-target=".bookList-add-modal-lg" class="thumbnail">
+                        <img src="images/screenshots/bookList_Add.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <a data-toggle="modal" data-target=".bookList-list-modal-lg" class="thumbnail">
+                        <img src="images/screenshots/bookList_list.jpg" alt="">
+                    </a>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <a data-toggle="modal" data-target=".bookList-edit-modal-lg" class="thumbnail">
+                        <img src="images/screenshots/bookList_edit.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-12">
                     <h2 class="port-title">Rock the Vote</h2>
                     <hr>
 
                     <ul>
-                        <li>A full MEAN stack application</li>
+                        <li>A full stack application</li>
                         <li>Allows for new issues to be added, commented on, and up or down voted.</li>
                         <li>Each issue is ordered by upvote score.</li>
                     </ul>
@@ -207,11 +258,56 @@
                     </div>
                 </div>
             </div>
+            <div class="modal fade bookList-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <img class="img-responsive" src="images/screenshots/bookList.jpg" alt="home">
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade bookList-search-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <img class="img-responsive" src="images/screenshots/bookList_search.jpg" alt="home">
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade bookList-list-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <img class="img-responsive" src="images/screenshots/bookList_list.jpg" alt="home">
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade bookList-detail-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <img class="img-responsive" src="images/screenshots/bookList_bookdetail.jpg" alt="home">
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade bookList-add-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <img class="img-responsive" src="images/screenshots/bookList_Add.jpg" alt="home">
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade bookList-edit-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <img class="img-responsive" src="images/screenshots/bookList_edit.jpg" alt="home">
+                    </div>
+                </div>
+            </div>
+
+
+
 
         </div>
 
 
-        <div class="row" id='about'></div>
+        <div  id='about'></div>
         <div class="big big-two">
         </div>
 
@@ -244,12 +340,12 @@
 
             <!-- Accordian Collapse -->
 
+            <div class="panel-container">
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingOne">
 
-            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingOne">
-
-                        <h4 class="panel-title">
+                            <h4 class="panel-title">
                            <div class="row">
                            
                                <span role="button" data-toggle="collapse" data-parent="#accordion" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
@@ -271,17 +367,23 @@
                                </span>
                            </div>
                            </h4>
+                        </div>
                     </div>
-                </div>
-                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-                    <div class="panel-body">
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <p>Washington, D.C.</p>
-                                <ul>
-                                    <li></li>
-                                </ul>
-                            </div>
+                    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <p>Washington, D.C.</p>
+                                    <p>Evaluation Program Manager</p>
+                                </div>
+                                <div class="col-sm-9">
+                                    <ul>
+                                        <li>Evaluation and reporting on all program metrics showing progress towards goals, areas for improvement</li>
+                                        <li>Managed travel approval process, cost analysis, and budgeting, designing a system that was 90% more accurate and timely</li>
+                                        <li>Designed over 30 social media ready marketing materials for Suicide prevention cmapaign, all of which were approve and used in implementation.</li>
+                                        <li>Successfully represented the company at Suicide Prevention conference facilitated sessions on using research and data in creating strong prevention campaigns</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -311,15 +413,20 @@
                 <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                     <div class="panel-body">
                         <div class="row">
-                            <div class="col-md-3">
-                                <h4>Baha'i World Centre</h4>
-                                <p>March 2013 - Sep 2015</p>
-                                <p>Haifa, Israel</p>
-                            </div>
-                            <div class="col-md-9">
-                                <h4>Communications Associate</h4>
+                                <div class="col-sm-3">
+                                    <p>Haifa, Israel</p>
+                                    
+                                </div>
+                            
+                            <div class="col-md-9 coll-div">
+                                
                                 <ul>
-                                    <li>Stuff that I did there that is awesome!</li>
+                                    <li>Proofread and reviewed an average of 47 documents a month for accuracy, style, and grammar, these documents reached audiences of up to 5 million people in over 200 countries.</li>
+                                    <li>Provided introductory training to new staff on a monthly basis, and provided 3-4 week in depth training and supervision to 5 new staff members.</li>
+                                    <li>Reviewed budgets for accuracy and outgoing payments for approval.</li>
+                                    <li>Reviewed the work of coworkers to ensure accuracy.</li>
+                                    <li>Engaged in Program design for transition from paper-based to paperless systems.</li>
+                                    <li>Performed analysis of office performance. Including data collection, data analysis, data synthesis, data reporting on office workflows and overall performance. Coauthored report on performance of the office using this data, providing recommendations for improved efficiency and functioning.</li>
                                 </ul>
                             </div>
                         </div>
@@ -334,7 +441,7 @@
                            <div class="row">
                             <span role="button" data-toggle="collapse" data-parent="#accordion" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                              <div class="col-xs-4">
-                                 Centre for Social Innovation
+                                 Center for Social Innovation
                              </div>
                               <div class="col-xs-4 text-center">
                               <small>LAB Project Coordinator</small>
@@ -350,14 +457,15 @@
                     <div class="panel-body">
                         <div class="row">
                             <div class="col-md-3">
-                                <h4>Social Innovation</h4>
-                                <p></p>
+                               <p>Boston College</p>
+                               <p>Graduate School of Social Work</p>
                                 <p>Boston, MA</p>
                             </div>
-                            <div class="col-md-9">
-                                <h4>Project Coordinator</h4>
+                            <div class="col-md-9 coll-div">
                                 <ul>
-                                    <li>Stuff that I did there that is awesome!</li>
+                                   <li>Program Design work for 2011 Social Innovation LAB</li>
+                                   <li>Planned and coordinated all project events</li>
+                                    <li>Development of the metrics for the Lab. Using Qualtrics created the online web surveys for participants. Analyzed data from surveys and provided analytic reports on participant responses.</li>
                                 </ul>
                             </div>
                         </div>
@@ -386,14 +494,15 @@
                     <div class="panel-body">
                         <div class="row">
                             <div class="col-md-3">
-                                <h4>Peace Corps Benin</h4>
-                                <p></p>
-                                <p>Benin</p>
+                                <p>Peace Corps Benin</p>
+                                <p>English Teacher</p>
                             </div>
-                            <div class="col-md-9">
-                                <h4>English Teacher</h4>
+                            <div class="col-md-9 coll-div">
+                                
                                 <ul>
-                                    <li>Stuff that I did there that is awesome!</li>
+                                    <li>Taught English 20 hours a week, classes averaged 50 students, aged 11 to 20</li>
+                                    <li>Wrote grant to expand school library by purchase of additional books</li>
+                                    <li>Organized and participated in region-wide camp for 60 girls</li>
                                 </ul>
                             </div>
                         </div>
@@ -401,27 +510,13 @@
                 </div>
             </div>
         </div>
+    </div>
 
 
 
-        <div class="row" id='contact'></div>
+    <div  id='contact'></div>
 
-        <div class="big big-four">
-        </div>
-
-        <div class="container port">
-            <div class="row">
-                <div class="col-sm-12 ">
-                    <h2 class="lang">Contact</h2>
-                    <hr class='subhr'>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6">
-
-                </div>
-            </div>
-        </div>
+    <div class="big big-four">
     </div>
 
     <!-- SCRIPTS -->
