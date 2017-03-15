@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c61417f7-b534-4cd4-9e2a-9a32125c2c9d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codingbat/array2/test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/codingbat/array2/centeredaverage.js" afterPath="$PROJECT_DIR$/codingbat/array2/centeredaverage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/personalportfolio/app.js" afterPath="$PROJECT_DIR$/projects/personalportfolio/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/personalportfolio/index.html" afterPath="$PROJECT_DIR$/projects/personalportfolio/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/personalportfolio/style.css" afterPath="$PROJECT_DIR$/projects/personalportfolio/style.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -29,7 +29,7 @@
         <entry file="file://$PROJECT_DIR$/codingbat/array2/centeredaverage.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="300">
-              <caret line="20" column="4" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
+              <caret line="20" column="4" lean-forward="false" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -102,7 +102,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -117,6 +116,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -204,11 +204,12 @@
       <workItem from="1487367905825" duration="900000" />
       <workItem from="1487368914088" duration="371000" />
       <workItem from="1487369395438" duration="186000" />
+      <workItem from="1489508003004" duration="25000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2707000" />
+    <option name="totallyTimeSpent" value="2732000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -272,6 +273,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/codingbat/array2/centeredaverage.js">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codingbat/array2/centeredaverage.js">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="19" column="5" lean-forward="false" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
           <folding />
@@ -288,7 +297,7 @@
     <entry file="file://$PROJECT_DIR$/codingbat/array2/centeredaverage.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
-          <caret line="20" column="4" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
+          <caret line="20" column="4" lean-forward="false" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
           <folding />
         </state>
       </provider>

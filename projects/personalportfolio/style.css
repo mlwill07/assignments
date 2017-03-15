@@ -67,14 +67,6 @@ a.navbar-brand {
     }
 }
 
-.edge {
-   
-}
-
-.edge2 {
-
-   
-}
 
 
 .big {
@@ -172,7 +164,7 @@ h3.big-name {
 .icon {
     display: inline-block;
     width: 100%;
-    height: 125px;
+    height: 100px;
     margin: 20px 10px;
 }
 
@@ -263,15 +255,3 @@ h3.big-name {
 }
 
 
-/*
-font-family: 'Raleway', sans-serif;
-font-family: 'Playfair Display', serif;
-
-colors:
-navy/black: #10222B
-darkgreen:  #95AB63
-lightgreen: #BDD684
-palegreen:  #E2F0D6
-palergreen: #F6FFE0
-
-*/
