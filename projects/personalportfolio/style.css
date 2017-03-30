@@ -157,6 +157,15 @@ h3.big-name {
     margin-top: 10px;
 }
 
+.port-title > a {
+    
+    color: black;
+}
+
+.port-title > a:hover {
+    color: #95AB63;
+}
+
 .port ul {
     list-style:square;
 }
@@ -207,6 +216,9 @@ h3.big-name {
     background-color: #E2F0D6;
 }
 
+.screenshots {
+    margin-top: 5px;
+}
 
 
 
@@ -251,6 +263,11 @@ h3.big-name {
 }
 .express {
     background: url('images/logos/expressIcon.png') center center no-repeat;
+    background-size: contain;
+}
+
+.react {
+    background: url('images/logos/react.png') center center no-repeat;
     background-size: contain;
 }
 
